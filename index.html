@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" class="css">
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body onload="loadData()">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-12 col-md-8 mx-auto">
+                <h1 class="fw-light">Tienda JonyBB</h1>
+                <p class="lead text-muted">
+                    Laboramos de Lunes a Domingo, las 24 hrs y los 365 dias del año...
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Arbol.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Arbol de Navidad</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$684.98</h6>
+                          <p class="card-text">Arbol Navidad Artificial Nevado 1.90 M Follaje Jardimex Pino</p>
+                          <a id="prod001" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Bolsa.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Bolsa</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$345.99</h6>
+                          <p class="card-text">Tommy Hilfiger Bolsa Crossover Para Mujer Con Bolsillo</p>
+                          <a id="prod002" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Lentes.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lentes</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$127.99</h6>
+                          <p class="card-text">Anteojos de sol Ray-Ban Jackie Ohh Standard con marco de nailon color gloss tortoise, lente green de cristal clásica, varilla gloss tortoise de nailon - RB4101</p>
+                          <a id="prod003" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Maleta.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Maleta</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$709.99</h6>
+                          <p class="card-text">Maleta Samsonite Empire Charcoal.</p>
+                          <a id="prod004" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Playera.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Playera</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$287.99</h6>
+                          <p class="card-text">Camiseta De Cuello Redondo En Algodón Orgánico Con Logo.</p>
+                          <a id="prod005" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Sarten.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Sarten</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$150.28</h6>
+                          <p class="card-text">Este csm me mordió ayer y ya no lo quiero.</p>
+                          <a id="prod006" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Switch.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Switch</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$6,000.99</h6>
+                          <p class="card-text">Nintendo Switch 32GB Standard color rojo neón, azul neón y negro</p>
+                          <a id="prod007" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Tablet.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Tablet</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$4,345.99</h6>
+                          <p class="card-text">Tablet Samsung Galaxy Tab A7 Lite with Book Cover SM-T220 8.7" 32GB gris y 3GB de memoria RA.</p>
+                          <a id="prod008" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col" >
+                    <div class="card h-100">
+                        <img src="./Imagenes para html/Taladro.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Taladro</h5>
+                          <h6 class="card-subtitle mb-2 text-muted price">$4,678.99</h6>
+                          <p class="card-text">Taladro Inalámbrico Impacto Rotomartillo Sidsys 2batería 21v</p>
+                          <a id="prod009" onclick="AddCart()" href="#" class="btn btn-info">Add to cart</a>
+                        </div>
+                      </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
